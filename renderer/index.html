@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSINT Email Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+      th, td {
+        border: 1px solid #ccc;
+        padding: 0.5rem 0.75rem;
+        text-align: left;
+      }
+      th {
+        background-color: #f3f4f6;
+        font-weight: 600;
+      }
+      tbody tr:nth-child(even) td {
+        background-color: #fafafa;
+      }
+      .no-results {
+        text-align: center;
+        padding: 1rem;
+        color: #6b7280;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <form id="frm">
+            <input type="text" id="company" placeholder="Company name" required />
+            <input type="text" id="domain" placeholder="Domain" required />
+            <button type="submit">Search</button>
+        </form>
+        <div id="info" class="mb-4 text-sm italic text-gray-600"></div>
+        <!-- Dynamic results will be injected here -->
+        <div id="table-holder"></div>
+    </main>
+    <script src="renderer.js"></script>
+</body>
+</html>

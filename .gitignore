@@ -1,0 +1,15 @@
+/node_modules
+/dist
+/.env
+/.env.local
+/.env.example
+/.env.development.local
+/.env.test.local
+/.env.production.local
+/.env.development
+/.env.test
+/.env.production
+/.cache
+/.next
+/.nuxt
+/.nuxt-dev      
